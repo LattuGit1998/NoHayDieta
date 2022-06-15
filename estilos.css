@@ -155,35 +155,9 @@ ol{
 
 /* ------------------------------  FORMULARIO CONTACTO  ------------------------------- */
 
-.h__center{
-    text-align: center;
-    color: rgb(248, 193, 73);
-}
 
-.form{
-    margin: auto;
-    background-color: #fff;
-    width: 100%;
-    max-width: 300px;
-    border-radius: 1em;
-    padding: 1.5em 1em
-}
 
-.form__input {
-    font-family:inherit ;
-    font-size: 20px;
-    padding: .8em 1em;
-    outline: none;
-    border: none;
-    border: 1px solid #bbb0b0;
-    border-radius: 0.2 em;
-}
 
-.form__input--message{
-    padding: 1.8em 1em;
-    resize: none;
-    margin-bottom: .5em ;
-}
 
 .form__container{
     width: 100%;
@@ -192,18 +166,7 @@ ol{
     grid-auto-columns: 100%;
 }
 
-.form__cta {
-    font-family:inherit ;
-    font-size: .6em;
-    background-color: rgb(240, 243, 63);
-    color: rgb(0, 0, 0);
-    border: none;
-    font-weight: 300;
-    padding: .7em 0;
-    border-radius: 1.2em;
-    cursor: pointer;
-    font-weight: 400;
-}
+
 
 
 /* ------------------------------  FORMULARIO CONTACTO  ------------------------------- */
