@@ -1,0 +1,223 @@
+/* ---------------IMPORTS--------------- */
+@font-face {
+  font-family: Comfortaa;
+  src: url("../assets/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.75)), to(rgba(5, 7, 12, 0.75))), url(../assets/fondo.png) repeat center;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../assets/fondo.png) repeat center;
+  background-size: 10%;
+  font-size: 20px;
+  font-family: Comfortaa;
+}
+
+body footer {
+  margin: 0px;
+  border-radius: 1em;
+  padding: auto;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.685);
+}
+
+h2 {
+  font-size: 50px;
+  font-family: Comfortaa;
+  text-align: center;
+  color: #ce8c11;
+}
+
+.font__comfortaa {
+  font-family: Comfortaa;
+  color: #ce8c11;
+}
+
+.bg__blak--trans {
+  background-color: rgba(0, 0, 0, 0.486);
+}
+
+.bg__vainilla {
+  background-color: #ce8c11;
+}
+
+.border__radius--1em {
+  border-radius: 1em;
+  border: 1px solid black;
+}
+
+/* .mg__auto{
+    margin: auto;
+    display:flex;
+} */
+#cont_index {
+  padding: 3em 3em;
+}
+
+/* ----------------------------------  MENU  ------------------------------- */
+.menu__nav {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.89);
+  border-radius: 1.5em;
+}
+
+.menu__nav li {
+  display: inline-block;
+}
+
+.menu__nav li a {
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  color: #fff;
+}
+
+.menu__nav li a:hover {
+  -webkit-animation: BGcolor-hovers 6s linear infinite alternate both;
+          animation: BGcolor-hovers 6s linear infinite alternate both;
+  color: black;
+  display: block;
+  border-radius: 1.5em;
+}
+
+@-webkit-keyframes BGcolor-hovers {
+  0% {
+    background: #cebb11;
+  }
+  33.3333% {
+    background: #ffc23d;
+  }
+  66.666% {
+    background: #ce5d11;
+  }
+  100% {
+    background: #ffca9f54;
+  }
+}
+
+@keyframes BGcolor-hovers {
+  0% {
+    background: #cebb11;
+  }
+  33.3333% {
+    background: #ffc23d;
+  }
+  66.666% {
+    background: #ce5d11;
+  }
+  100% {
+    background: #ffca9f54;
+  }
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+ol {
+  text-align: center;
+  list-style-type: none;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  color: #ce8c11;
+  text-align: center;
+  padding: 1.5em 0.8em;
+}
+
+.form__container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;
+}
+
+.form__container .menu__nav--foot {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.795);
+  border-radius: 1.5em;
+}
+
+.form__container .menu__nav--foot li {
+  display: block;
+}
+
+.form__container .menu__nav--foot li a {
+  margin: 10px;
+  padding: 10px;
+  display: block;
+  color: #fff;
+}
+
+.form__container .menu__nav--foot li a:hover {
+  background: #ce8c11;
+  border-radius: 1.5em;
+  color: black;
+  display: block;
+}
+
+/* ----------------------------------  MENU  ------------------------------- */
+/* -----------------------------------  SUCURSALES  --------------------------------------- */
+.cont__map--art {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 95% auto;
+      grid-template-rows: 95% auto;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  background-color: rgba(0, 0, 0, 0.87);
+  border-radius: 1em;
+  margin: auto;
+  width: 100vh;
+  height: 80vh;
+  padding: 1.5em .5em;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.cont__map--art .cont__map {
+  display: -ms-grid;
+  display: grid;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 1em;
+  margin-bottom: 5em;
+  width: 100%;
+  height: 100%;
+}
+
+.cont__map--art .cont__map .map {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  border: solid 1px black;
+}
+
+.cont__map--art .cont__map .map__input--search {
+  border-radius: 1em;
+  border: solid 1px black;
+  width: 100%;
+  height: auto;
+}
+
+#search__map {
+  font-family: Comfortaa;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+/* -----------------------------------  SUCURSALES  --------------------------------------- */
+/*# sourceMappingURL=estilos.css.map */
