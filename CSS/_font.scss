@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url("../assets/Comfortaa/Comfortaa-VariableFont_wght.ttf") ;
+}
+
+
+
+@mixin font ($f_zize:20px, $f_color:$color_vainilla, $f_family: Comfortaa) {
+    font-size: $f_zize;
+    color: $f_color;
+    font-family: $f_family;
+}
+
+@mixin font_h2 () {
+    @extend font;
+    font-style: italic;
+    
+}

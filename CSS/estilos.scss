@@ -1,26 +1,31 @@
 /* ---------------IMPORTS--------------- */
 
 @import "colores";
+@import "font";
 
-@font-face {
-    font-family: Comfortaa;
-    src: url("../assets/Comfortaa/Comfortaa-VariableFont_wght.ttf") ;
+@mixin border_r-1em ($color_border: $color_negro, $b_rad:1em) {
+    border: .5px solid $color_border;
+    border-radius: $b_rad;    
 }
 
 
-
-
 body{
-    background:linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(../assets/fondo.png) repeat center ;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    row-gap: 5px;
+
+
+
+    background:linear-gradient($color_negro--t40,$color_negro--t40), url(../assets/fondo.png) repeat center ;
     background-size: 10%;
-    font-size: 20px;
-    font-family: Comfortaa;
+    @include font();
     footer{
+        @include border_r-1em();
         margin: 0px;
-        border-radius: 1em;
         padding: auto;
         width: 90%;
-        background: rgba(0, 0, 0, 0.685);    
+        background: $color_negro--t40;    
     }
 
 }
@@ -30,33 +35,31 @@ body{
 
 
 h2{
-    font-size: 50px;
-    font-family: Comfortaa;
+    @extend .font__comfortaa;
+    @include border_r-1em();
+    width: 300px;
+
     text-align: center;
-    color: $vainilla;
+    text-decoration: underline;
+    background-color: $color_negro--t40;
+
 }
 
 .font__comfortaa{
-    font-family: Comfortaa;
-    color: $vainilla;
+    @include font();
 }
 
 .bg__blak--trans{
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: $color_negro--t40;
 }
 
 .bg__vainilla{
-    background-color: $vainilla;
+    background-color: $color_vainilla;
 }
 
 .border__radius--1em{
-    border-radius: 1em;
-    border: 1px solid black;
+@include border_r-1em();
 }
-/* .mg__auto{
-    margin: auto;
-    display:flex;
-} */
 
 
 
@@ -75,8 +78,8 @@ h2{
     margin: 0px;
     padding: 0px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.89);
-    border-radius: 1.5em;
+    background: $color_negro;
+    @include border_r-1em($b_rad:1.5em);
     
     li{
         display: inline-block;
@@ -90,9 +93,9 @@ h2{
         }
         a:hover{
             animation: BGcolor-hovers 6s linear infinite alternate both;
-            color: black;
+            color: $color_negro;
             display: block;
-            border-radius: 1.5em;
+            @include border_r-1em($b_rad:1.5em);
         }
         
         @keyframes BGcolor-hovers {
@@ -117,7 +120,7 @@ h2{
 ul{
     text-align: center;
     list-style-type: none;
-    font-size: 16px;
+    @include font($f_zize:16px);
     margin: 0px;
     padding: 0px;
 }
@@ -127,10 +130,9 @@ ul{
 ol{
     text-align: center;
     list-style-type: none;
-    font-size: 16px;
+    @include font($f_zize:16px);
     margin: 0px;
     padding: 0px;
-    color: $vainilla;
     text-align: center;
     padding: 1.5em 0.8em;
     
@@ -147,7 +149,7 @@ ol{
         padding: 0px;
         width: 100%;
         background: rgba(0, 0, 0, 0.795);
-        border-radius: 1.5em;
+        @include border_r-1em($b_rad:1.5em);
         li{
             display: block;
             a{
@@ -158,9 +160,9 @@ ol{
             
             }
             a:hover{
-                background: $vainilla ;
-                border-radius: 1.5em;
-                color: black;
+                background: $color_vainilla ;
+                @include border_r-1em($b_rad:1.5em);
+                color: $color_negro;
                 display: block;
             }
         }
@@ -179,8 +181,8 @@ ol{
     grid-template-rows: 95% auto;
     grid-template-columns: auto;
 
-    background-color: rgba(0, 0, 0, 0.87);
-    border-radius: 1em;
+    background-color: $color_negro--t40;
+    @include border_r-1em();
     margin: auto;
     width: 100vh;
     height: 80vh;
@@ -190,8 +192,8 @@ ol{
     align-items: stretch;
     .cont__map{
         display: grid;
-        background-color: rgba(255, 255, 255, 0);
-        border-radius: 1em;
+        background-color: rgb(255, 255, 255);
+        @include border_r-1em();
         margin-bottom: 5em;
         width: 100%;
         height: 100%;
@@ -199,12 +201,10 @@ ol{
             display: grid;
             width: 100%;
             height: 100%;
-            border-radius: 1em;
-            border: solid 1px black;
+            @include border_r-1em();
         }
         .map__input--search{
-            border-radius: 1em;
-            border: solid 1px black;
+            @include border_r-1em();
             width: 100%;
             height: auto;
         }
@@ -216,7 +216,7 @@ ol{
 
 
 #search__map{
-    font-family: Comfortaa;
+    @include font();
     text-align: center;
     text-overflow: ellipsis;
 }

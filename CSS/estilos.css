@@ -5,35 +5,46 @@
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.75)), to(rgba(5, 7, 12, 0.75))), url(../assets/fondo.png) repeat center;
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../assets/fondo.png) repeat center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  justify-items: center;
+  row-gap: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/fondo.png) repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/fondo.png) repeat center;
   background-size: 10%;
   font-size: 20px;
+  color: #ce8c11;
   font-family: Comfortaa;
 }
 
 body footer {
-  margin: 0px;
+  border: 0.5px solid #000;
   border-radius: 1em;
+  margin: 0px;
   padding: auto;
   width: 90%;
-  background: rgba(0, 0, 0, 0.685);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 h2 {
-  font-size: 50px;
-  font-family: Comfortaa;
+  border: 0.5px solid #000;
+  border-radius: 1em;
+  width: 300px;
   text-align: center;
-  color: #ce8c11;
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-.font__comfortaa {
-  font-family: Comfortaa;
+.font__comfortaa, h2 {
+  font-size: 20px;
   color: #ce8c11;
+  font-family: Comfortaa;
 }
 
 .bg__blak--trans {
-  background-color: rgba(0, 0, 0, 0.486);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .bg__vainilla {
@@ -41,14 +52,10 @@ h2 {
 }
 
 .border__radius--1em {
+  border: 0.5px solid #000;
   border-radius: 1em;
-  border: 1px solid black;
 }
 
-/* .mg__auto{
-    margin: auto;
-    display:flex;
-} */
 #cont_index {
   padding: 3em 3em;
 }
@@ -58,7 +65,8 @@ h2 {
   margin: 0px;
   padding: 0px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.89);
+  background: #000;
+  border: 0.5px solid #000;
   border-radius: 1.5em;
 }
 
@@ -76,8 +84,9 @@ h2 {
 .menu__nav li a:hover {
   -webkit-animation: BGcolor-hovers 6s linear infinite alternate both;
           animation: BGcolor-hovers 6s linear infinite alternate both;
-  color: black;
+  color: #000;
   display: block;
+  border: 0.5px solid #000;
   border-radius: 1.5em;
 }
 
@@ -115,6 +124,8 @@ ul {
   text-align: center;
   list-style-type: none;
   font-size: 16px;
+  color: #ce8c11;
+  font-family: Comfortaa;
   margin: 0px;
   padding: 0px;
 }
@@ -123,9 +134,10 @@ ol {
   text-align: center;
   list-style-type: none;
   font-size: 16px;
+  color: #ce8c11;
+  font-family: Comfortaa;
   margin: 0px;
   padding: 0px;
-  color: #ce8c11;
   text-align: center;
   padding: 1.5em 0.8em;
 }
@@ -143,6 +155,7 @@ ol {
   padding: 0px;
   width: 100%;
   background: rgba(0, 0, 0, 0.795);
+  border: 0.5px solid #000;
   border-radius: 1.5em;
 }
 
@@ -159,8 +172,9 @@ ol {
 
 .form__container .menu__nav--foot li a:hover {
   background: #ce8c11;
+  border: 0.5px solid #000;
   border-radius: 1.5em;
-  color: black;
+  color: #000;
   display: block;
 }
 
@@ -173,7 +187,8 @@ ol {
       grid-template-rows: 95% auto;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
-  background-color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0.5px solid #000;
   border-radius: 1em;
   margin: auto;
   width: 100vh;
@@ -190,7 +205,8 @@ ol {
 .cont__map--art .cont__map {
   display: -ms-grid;
   display: grid;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: white;
+  border: 0.5px solid #000;
   border-radius: 1em;
   margin-bottom: 5em;
   width: 100%;
@@ -202,18 +218,20 @@ ol {
   display: grid;
   width: 100%;
   height: 100%;
+  border: 0.5px solid #000;
   border-radius: 1em;
-  border: solid 1px black;
 }
 
 .cont__map--art .cont__map .map__input--search {
+  border: 0.5px solid #000;
   border-radius: 1em;
-  border: solid 1px black;
   width: 100%;
   height: auto;
 }
 
 #search__map {
+  font-size: 20px;
+  color: #ce8c11;
   font-family: Comfortaa;
   text-align: center;
   text-overflow: ellipsis;
