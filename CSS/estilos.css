@@ -11,8 +11,8 @@ body {
       grid-template-columns: auto;
   justify-items: center;
   row-gap: 5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/fondo.png) repeat center;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/fondo.png) repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.541)), to(rgba(0, 0, 0, 0.541))), url(../assets/fondo.png) repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.541)), url(../assets/fondo.png) repeat center;
   background-size: 10%;
   font-size: 20px;
   color: #ce8c11;
@@ -25,7 +25,7 @@ body footer {
   margin: 0px;
   padding: auto;
   width: 90%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.541);
 }
 
 h2 {
@@ -34,7 +34,7 @@ h2 {
   width: 300px;
   text-align: center;
   text-decoration: underline;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.541);
 }
 
 .font__comfortaa, h2 {
@@ -44,7 +44,7 @@ h2 {
 }
 
 .bg__blak--trans {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.541);
 }
 
 .bg__vainilla {
@@ -187,7 +187,7 @@ ol {
       grid-template-rows: 95% auto;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.541);
   border: 0.5px solid #000;
   border-radius: 1em;
   margin: auto;

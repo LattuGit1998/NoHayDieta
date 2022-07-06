@@ -1,0 +1,31 @@
+{
+  "name": "nohaydieta",
+  "version": "1.0.0",
+  "description": "Paginas dedicada a la comercializacion y promocion de productos alimenticios artesanales.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LattuGit1998/NoHayDieta.git"
+  },
+  "keywords": [
+    "Profiteroles",
+    "masas",
+    "quebradas",
+    "dieta",
+    "masas",
+    "finas",
+    "postres",
+    "vainilla",
+    "chocolate",
+    "dulce"
+  ],
+  "author": "Agustin Lattuada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LattuGit1998/NoHayDieta/issues"
+  },
+  "homepage": "https://github.com/LattuGit1998/NoHayDieta#readme"
+}
