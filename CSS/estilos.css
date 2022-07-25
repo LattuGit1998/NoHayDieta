@@ -21,7 +21,7 @@ body {
 
 body footer {
   border: 0.5px solid #000;
-  border-radius: 1em;
+  border-radius: 5px;
   margin: 0px;
   padding: auto;
   width: 90%;
@@ -30,7 +30,7 @@ body footer {
 
 h2 {
   border: 0.5px solid #000;
-  border-radius: 1em;
+  border-radius: 5px;
   width: 300px;
   text-align: center;
   text-decoration: underline;
@@ -53,7 +53,7 @@ h2 {
 
 .border__radius--1em {
   border: 0.5px solid #000;
-  border-radius: 1em;
+  border-radius: 5px;
 }
 
 #cont_index {
@@ -67,7 +67,7 @@ h2 {
   width: 100%;
   background: #000;
   border: 0.5px solid #000;
-  border-radius: 1.5em;
+  border-radius: 1em;
 }
 
 .menu__nav li {
@@ -87,7 +87,7 @@ h2 {
   color: #000;
   display: block;
   border: 0.5px solid #000;
-  border-radius: 1.5em;
+  border-radius: 1em;
 }
 
 @-webkit-keyframes BGcolor-hovers {
@@ -156,7 +156,7 @@ ol {
   width: 100%;
   background: rgba(0, 0, 0, 0.795);
   border: 0.5px solid #000;
-  border-radius: 1.5em;
+  border-radius: 1em;
 }
 
 .form__container .menu__nav--foot li {
@@ -173,7 +173,7 @@ ol {
 .form__container .menu__nav--foot li a:hover {
   background: #ce8c11;
   border: 0.5px solid #000;
-  border-radius: 1.5em;
+  border-radius: 1em;
   color: #000;
   display: block;
 }
@@ -189,7 +189,7 @@ ol {
       grid-template-columns: auto;
   background-color: rgba(0, 0, 0, 0.541);
   border: 0.5px solid #000;
-  border-radius: 1em;
+  border-radius: 5px;
   margin: auto;
   width: 100vh;
   height: 80vh;
@@ -207,7 +207,7 @@ ol {
   display: grid;
   background-color: white;
   border: 0.5px solid #000;
-  border-radius: 1em;
+  border-radius: 5px;
   margin-bottom: 5em;
   width: 100%;
   height: 100%;
@@ -219,12 +219,12 @@ ol {
   width: 100%;
   height: 100%;
   border: 0.5px solid #000;
-  border-radius: 1em;
+  border-radius: 5px;
 }
 
 .cont__map--art .cont__map .map__input--search {
   border: 0.5px solid #000;
-  border-radius: 1em;
+  border-radius: 5px;
   width: 100%;
   height: auto;
 }

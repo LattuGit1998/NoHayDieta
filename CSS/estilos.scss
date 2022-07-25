@@ -3,7 +3,7 @@
 @import "colores";
 @import "font";
 
-@mixin border_r-1em ($color_border: $color_negro, $b_rad:1em) {
+@mixin border_r-1em ($color_border: $color_negro, $b_rad:5px) {
     border: .5px solid $color_border;
     border-radius: $b_rad;    
 }
@@ -79,7 +79,7 @@ h2{
     padding: 0px;
     width: 100%;
     background: $color_negro;
-    @include border_r-1em($b_rad:1.5em);
+    @include border_r-1em($b_rad:1em);
     
     li{
         display: inline-block;
@@ -95,7 +95,7 @@ h2{
             animation: BGcolor-hovers 6s linear infinite alternate both;
             color: $color_negro;
             display: block;
-            @include border_r-1em($b_rad:1.5em);
+            @include border_r-1em($b_rad:1em);
         }
         
         @keyframes BGcolor-hovers {
@@ -151,7 +151,7 @@ ol{
         padding: 0px;
         width: 100%;
         background: rgba(0, 0, 0, 0.795);
-        @include border_r-1em($b_rad:1.5em);
+        @include border_r-1em($b_rad:1em);
         li{
             display: block;
             a{
@@ -163,7 +163,7 @@ ol{
             }
             a:hover{
                 background: $color_vainilla ;
-                @include border_r-1em($b_rad:1.5em);
+                @include border_r-1em($b_rad:1em);
                 color: $color_negro;
                 display: block;
             }
