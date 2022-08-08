@@ -28,6 +28,15 @@ body footer {
   background: rgba(0, 0, 0, 0.541);
 }
 
+h1 {
+  border: 0.5px solid #000;
+  border-radius: 5px;
+  width: 300px;
+  font-size: small;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.541);
+}
+
 h2 {
   border: 0.5px solid #000;
   border-radius: 5px;
@@ -37,7 +46,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.541);
 }
 
-.font__comfortaa, h2 {
+.font__comfortaa, h1, h2 {
   font-size: 20px;
   color: #ce8c11;
   font-family: Comfortaa;
@@ -191,7 +200,7 @@ ol {
   border: 0.5px solid #000;
   border-radius: 5px;
   margin: auto;
-  width: 100vh;
+  width: 100%;
   height: 80vh;
   padding: 1.5em .5em;
   justify-items: center;
